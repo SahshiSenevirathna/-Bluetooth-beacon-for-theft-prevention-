@@ -1,16 +1,20 @@
 # beacon_demo_ui
 
-A new Flutter project.
+This project is a smart anti-theft system using ESP32 and a Flutter mobile app.
 
-## Getting Started
+## Features
+- BLE-based device tracking
+- RSSI signal strength monitoring
+- Distance estimation (Very Near / Medium / Far)
+- Real-time alerts
+- Buzzer alarm for theft warning
 
-This project is a starting point for a Flutter application.
+## Technologies
+- Flutter (Mobile App)
+- ESP32 (BLE Beacon)
+- Arduino IDE (Embedded Programming)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How it works
+The ESP32 acts as a Bluetooth beacon.  
+The mobile app scans the signal strength (RSSI) and estimates distance.  
+When the signal becomes weak, the app sends an alert and activates the buzzer.
